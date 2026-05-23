@@ -1,0 +1,5 @@
+# OpenClaw 监控守护 (加入现有 crontab)
+*/5  * * * * /home/zbc2/.openclaw/monitor-scripts/gateway-check.sh >/dev/null 2>&1
+*/30 * * * * /home/zbc2/.openclaw/monitor-scripts/disk-check.sh >/dev/null 2>&1
+*/15 * * * * /home/zbc2/.openclaw/monitor-scripts/load-check.sh >/dev/null 2>&1
+*/15 * * * * /home/zbc2/.openclaw/monitor-scripts/network-check.sh >/dev/null 2>&1
